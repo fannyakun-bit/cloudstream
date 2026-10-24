@@ -84,6 +84,7 @@ class CloudStreamApp : Application(), SingletonImageLoader.Factory {
         }
 
         AppDebug.isDebug = BuildConfig.DEBUG
+        APIHolder.allProviders.add(com.example.ExampleProvider())
     }
 
     override fun attachBaseContext(base: Context?) {
